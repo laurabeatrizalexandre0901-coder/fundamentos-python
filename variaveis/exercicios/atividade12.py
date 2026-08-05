@@ -12,5 +12,4 @@ if produto1 >= produto2 and produto1 >= produto3:
 elif produto2 >= produto1 and produto2 >= produto3:
  print(f"Produto mais caro: {produto2}")
 else:
-
  print(f"Produto mais caro: {produto3}")
