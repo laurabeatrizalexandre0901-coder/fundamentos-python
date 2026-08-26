@@ -94,6 +94,43 @@ notas_ordenadas, sophia = gerenciar_notas(notas_semestre,3.5)
 print(f"notas_ordenadas = {notas_ordenadas}")
 print(f"a nota das medias é = {sophia}")
 
+# Lista de Listas
+def adicionar_produto(produtos, produto):
+    produtos.append(produto)
+    print(f"minha lista de produtos: {produtos[0][2]}")
+
+
+lista_produtos = [
+    ["Arroz", 2, 32.00],
+    ["Feijão", 3, 8.50]
+]
+novo_produtos = ["Café", 2, ]
+adicionar_produto(lista_produtos, novo_produtos)
+
+def quantidade_total_produtos(produtos):
+    quantidade = []
+
+    for produto in produtos:
+        print(f"rodando laço for em lista_produtos: {produto}")
+        quantidade.append(produto[1])
+
+    return sum(quantidade)
+
+quantidade_produtos = quantidade_total_produtos(lista_produtos)
+print(f"quantidade de produtos: {quantidade_produtos}")
+
+def valor_total_produtos(produtos):
+    valores = []
+
+    for produto in produtos:
+        valores.append(produto[2])
+
+    return sum(valores)
+valor_total_produtos=valor_total_produtos(lista_produtos)
+print(f"valor total: {valor_total_produtos}")
+
+
+
 
 
 
